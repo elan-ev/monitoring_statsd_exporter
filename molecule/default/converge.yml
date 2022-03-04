@@ -1,0 +1,8 @@
+---
+- name: converge
+  hosts: all
+  become: true
+  tasks:
+    - name: include statsd_exporter
+      include_role:
+        name: monitoring_statsd_exporter
