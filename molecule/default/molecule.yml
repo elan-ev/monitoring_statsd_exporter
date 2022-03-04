@@ -16,6 +16,7 @@ platforms:
   - name: statsd_exporter_ubuntu_latest
     image: docker.io/ubuntu:latest
     pre_build_image: false
+    privileged: true
     command: /sbin/init
     tmpfs:
       - /run
