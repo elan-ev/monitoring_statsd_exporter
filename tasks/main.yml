@@ -9,6 +9,7 @@
   user:
     name: statsd_exporter
     state: present
+    create_home: false
 
 - name: create statsd_exporter directory
   file:
